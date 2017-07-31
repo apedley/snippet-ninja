@@ -1,0 +1,12 @@
+{
+  "pgSQL": {
+    "host": "localhost",
+    "port": 5432,
+    "url": "",
+    "database": "snippet-ninja-dev",
+    "password": "",
+    "name": "pgSQL",
+    "user": "",
+    "connector": "postgresql"
+  }
+}

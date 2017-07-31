@@ -1,0 +1,5 @@
+<div *ngFor="let snippet of snippets; let i = index">
+  <h4>
+    <a [routerLink]="['/snippets', snippet.id]">{{ snippet.title }}</a>
+    </h4>
+</div>

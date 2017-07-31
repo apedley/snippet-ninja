@@ -1,0 +1,43 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "Developer": {
+    "dataSource": "pgSQL",
+    "public": true
+  },
+  "Language": {
+    "dataSource": "pgSQL",
+    "public": true
+  },
+  "Snippet": {
+    "dataSource": "pgSQL",
+    "public": true
+  },
+  "AccessToken": {
+    "dataSource": "pgSQL",
+    "public": false,
+    "relations": {
+      "user": {
+        "type": "belongsTo",
+        "model": "Developer",
+        "foreignKey": "developerId"
+      }
+    }
+  },
+  "ACL": {
+    "dataSource": "pgSQL",
+    "public": false
+  }
+}

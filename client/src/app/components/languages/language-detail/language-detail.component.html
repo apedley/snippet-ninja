@@ -1,0 +1,6 @@
+<div *ngIf="language">
+  <h2>{{ language.name }}</h2>
+  <div>
+    <app-snippet-list [snippets]="language.snippets"></app-snippet-list>
+  </div>
+</div>

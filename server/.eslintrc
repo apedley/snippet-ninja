@@ -1,0 +1,4 @@
+{
+  "extends": "loopback",
+  "comma-dangle": false
+}

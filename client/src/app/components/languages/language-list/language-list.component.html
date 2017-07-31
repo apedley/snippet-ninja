@@ -1,0 +1,7 @@
+<div class="language-list">
+  <div *ngFor="let language of languages; let i = index">
+    <h4>
+      <a [routerLink]="['/languages', language.id]">{{ language.name }}</a>
+    </h4>
+  </div>
+</div>
